@@ -17,7 +17,20 @@ $color-tertiary: #383838;
 $gotham-bold: "Gotham Bold";
 $gotham-rounded: "Gotham Rounded Light";
 
+html {
+  font-size: 62.5%; //REM Reset
+}
+
+.nav-container {
+  background-color: $color-tertiary;
+}
+
+.hero-container {
+  background-color: $color-primary;
+}
+
 h1 {
+  font-size: 10rem;
   font-family: $gotham-bold;
   color: $color-primary;
 }

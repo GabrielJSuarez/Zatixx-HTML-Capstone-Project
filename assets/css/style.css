@@ -1,15 +1,34 @@
 @font-face {
   font-family: "Gotham Bold";
-  src: url("/assets/fonts/Gotham-Bold.woff") format("woff"), url("/assets/fonts/Gotham-Bold.ttf") format("truetype"); }
+  src: url("/assets/fonts/Gotham-Bold.woff") format("woff"), url("/assets/fonts/Gotham-Bold.ttf") format("truetype");
+}
 
 @font-face {
   font-family: "Gotham Rounded Light";
-  src: url("/assets/fonts/GothamRounded-Light.woff") format("woff"), url("/assets/fonts/GothamRounded-Light.ttf") format("truetype"); }
+  src: url("/assets/fonts/GothamRounded-Light.woff") format("woff"), url("/assets/fonts/GothamRounded-Light.ttf") format("truetype");
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.nav-container {
+  background-color: #383838;
+}
+
+.hero-container {
+  background-color: #d35266;
+}
 
 h1 {
+  font-size: 10rem;
   font-family: "Gotham Bold";
-  color: #d35266; }
+  color: #d35266;
+}
 
 h2 {
   font-family: "Gotham Rounded Light";
-  color: #888; }
+  color: #888;
+}
+
+/*# sourceMappingURL=style.css.map */
