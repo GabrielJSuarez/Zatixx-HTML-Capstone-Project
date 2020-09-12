@@ -31,7 +31,7 @@
           <li class="pr-4">
             <a class="navbar-brand text-white" href="#"> ZATTIX </a>
           </li>
-          <li class="nav-item pr-4 active text-uppercase">
+          <li class="nav-item pr-4 text-uppercase">
             <a class="nav-link" href="#"><i class="fas fa-home"></i> Home</a>
           </li>
           <li class="nav-item pr-4 text-uppercase">
@@ -61,38 +61,39 @@
       </nav>
     </div>
 
-    <div class="hero-container d-flex flex-column align-items-center">
-      <div class="mt-5">
+    <div class="hero-container d-flex flex-column align-items-center position-relative">
+      <!--Page Title-->
+      <div class="my-5 page-title">
         <h1 class="hero-title text-white">ZA<span>TT</span>IX</h1>
         <h3 class="text-white">
-          Buying And Selling Couldn't be Simpler than this!
+          Buying And Selling Your Consoles & Games in one Click!
         </h3>
       </div>
 
       <!--Search Hero-->
-      <form class="hero-search">
+      <form class="hero-search mt-5">
         <div class="d-flex">
-          <div class="form-row pr-1">
+          <div class="form-row pr-1 mr-3">
             <div class="col pr-0 pl-1">
               <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
               <select class="form-control form-size" id="inlineFormCustomSelect">
-                <option selected>Choose...</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
+                <option selected>All Items</option>
+                <option value="1">Consoles</option>
+                <option value="2">Peripherals/option>
+                <option value="3">Games</option>
               </select>
             </div>
 
             <div class="col pr-0 pl-1">
-              <input type="text" class="form-control form-size" placeholder="First name">
+              <input type="text" class="form-control form-size" placeholder="For what plataform?">
             </div>
 
             <div class="col pr-0 pl-1">
-              <input type="text" class="form-control form-size" placeholder="Last name">
+              <input type="search" class="form-control form-size" placeholder="Search">
             </div>
           </div>
 
-          <button type="submit" class="btn btn-primary ">Sign in</button>
+          <button type="submit" class="btn search-buttom">Search</button>
         </div>
       </form>
     </div>
