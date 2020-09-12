@@ -1,51 +1,8 @@
-@font-face {
-  font-family: "Gotham Bold";
-  src: url("/assets/fonts/Gotham-Bold.woff") format("woff"),
-    url("/assets/fonts/Gotham-Bold.ttf") format("truetype");
-}
+// fonts
+@import "fonts";
 
-@font-face {
-  font-family: "Gotham Rounded Light";
-  src: url("/assets/fonts/GothamRounded-Light.woff") format("woff"),
-    url("/assets/fonts/GothamRounded-Light.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Helvetica Neue Light";
-  src: url("/assets/fonts/HelveticaNeueLight.woff") format("woff"),
-    url("/assets/fonts/HelveticaNeueLight.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Helvetica Neue Medium";
-  src: url("/assets/fonts/HelveticaNeueMedium.woff") format("woff"),
-    url("/assets/fonts/HelveticaNeueMedium.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Helvetica Neue Bold";
-  src: url("/assets/fonts/HelveticaNeueBold.woff") format("woff"),
-    url("/assets/fonts/HelveticaNeueBold.ttf") format("truetype");
-}
-
-// Colors
-
-$color-primary: #d35266;
-$color-secundary: #888;
-$color-tertiary: #383838;
-
-// Fonts
-
-$gotham-bold: "Gotham Bold";
-$gotham-rounded: "Gotham Rounded Light";
-$helvetica-light: "Helvetica Neue Light";
-$helvetica-medium: "Helvetica Neue Medium";
-$helvetica-bold: "Helvetica Neue Bold";
-
-// Font Sizes
-
-$fontsize-m: 1.8rem;
-$fontsize-l: 4rem;
+// Variables
+@import "variables";
 
 // Globals
 
@@ -82,15 +39,8 @@ html {
       .ad-nav {
         color: #000;
       }
-
     }
   }
-
-
-
-
-
-
 }
 
 .hero-container {
