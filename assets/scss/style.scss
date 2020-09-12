@@ -27,15 +27,12 @@
     }
 
     .navbar-brand {
-      font-family: $gotham-bold;
-      font-size: $fontsize-m;
+      @include font-style($gotham-bold, $fontsize-m, $color-light);
       @include spacing(-2.5px);
     }
 
     a {
-      font-size: $fontsize-s;
-      font-family: $gotham-rounded;
-      color: $color-secundary;
+      @include font-style($gotham-rounded, $fontsize-s, $color-secundary);
 
       &:hover {
         color: $color-primary;
