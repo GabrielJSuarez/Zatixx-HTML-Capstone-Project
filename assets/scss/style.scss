@@ -17,88 +17,90 @@
 
 .nav-container {
   background-color: $color-tertiary;
-}
 
-.header-nav {
-  li {
-    .logo {
-      color: $color-primary;
-      font-size: $fontsize-l;
-    }
-
-    .navbar-brand {
-      @include font-style($gotham-bold, $fontsize-m, $color-light);
-      @include spacing(-2.5px);
-    }
-
-    a {
-      @include font-style($gotham-rounded, $fontsize-s, $color-secundary);
-
-      &:hover {
+  .header-nav {
+    li {
+      .logo {
         color: $color-primary;
+        font-size: $fontsize-l;
+      }
+
+      .navbar-brand {
+        @include font-style($gotham-bold, $fontsize-m, $color-light);
+        @include spacing(-2.5px);
+      }
+
+      a {
+        @include font-style($gotham-rounded, $fontsize-s, $color-secundary);
+
+        &:hover {
+          color: $color-primary;
+        }
+      }
+
+      .ad-nav {
+        background-color: $color-primary;
+      }
+    }
+  }
+
+  .hero-container {
+    background-color: $color-primary;
+    height: 38rem;
+    z-index: -1;
+
+    &::before {
+      height: 0;
+      position: absolute;
+      top: -118px;
+      left: -60px;
+      content: "\f11b";
+      transform: rotate(-45deg);
+      font-family: 'FontAwesome';
+      font-size: 45rem;
+      -webkit-transform: rotate(-35deg);
+      color: rgba(56, 56, 56, 0.2);
+      z-index: 0;
+    }
+
+    .page-title {
+      z-index: $zindex1;
+
+      h1 {
+        margin-top: 5rem;
+        font-size: 8rem;
+        text-align: center;
+        font-family: $gotham-bold;
+
+
+        span {
+          @include spacing(-8px);
+        }
+      }
+
+      h3 {
+        @include font-style($gotham-rounded, $fontsize-s, $color-light);
       }
     }
 
-    .ad-nav {
-      background-color: $color-primary;
-    }
-  }
-}
+    .hero-search {
+      z-index: $zindex1;
 
-.hero-container {
-  background-color: $color-primary;
-  height: 38rem;
-  z-index: -1;
+      .form-size {
+        height: 4rem;
+        width: 20rem;
+        border-radius: 0;
+        @include font-style($gotham-rounded, $fontsize-s, $color-secundary);
+      }
 
-  &::before {
-    height: 0;
-    position: absolute;
-    top: -118px;
-    left: -60px;
-    content: "\f11b";
-    transform: rotate(-45deg);
-    font-family: 'FontAwesome';
-    font-size: 45rem;
-    -webkit-transform: rotate(-35deg);
-    color: rgba(56, 56, 56, 0.2);
-    z-index: 0;
-  }
-
-  .page-title {
-    z-index: $zindex1;
-
-    h1 {
-      margin-top: 5rem;
-      font-size: 8rem;
-      text-align: center;
-      font-family: $gotham-bold;
-
-
-      span {
-        @include spacing(-8px);
+      .search-buttom {
+        width: 10rem;
+        background-color: $color-tertiary;
+        @include font-style($gotham-rounded, $fontsize-s, $color-secundary)
       }
     }
 
-    h3 {
-      @include font-style($gotham-rounded, $fontsize-s, $color-light);
-    }
   }
-
-  .hero-search {
-    z-index: $zindex1;
-
-    .form-size {
-      height: 4rem;
-      width: 20rem;
-      border-radius: 0;
-      @include font-style($gotham-rounded, $fontsize-s, $color-secundary);
-    }
-
-    .search-buttom {
-      width: 10rem;
-      background-color: $color-tertiary;
-      @include font-style($gotham-rounded, $fontsize-s, $color-secundary)
-    }
-  }
-
 }
+
+// 
