@@ -42,12 +42,55 @@ $helvetica-light: "Helvetica Neue Light";
 $helvetica-medium: "Helvetica Neue Medium";
 $helvetica-bold: "Helvetica Neue Bold";
 
+// Font Sizes
+
+$fontsize-m: 1.8rem;
+$fontsize-l: 4rem;
+
+// Globals
+
 html {
   font-size: 62.5%; //REM Reset
 }
 
+// -------
+
+// Navigation
+
 .nav-container {
   background-color: $color-tertiary;
+}
+
+.header-nav {
+  ul {
+    li {
+      .logo {
+        color: $color-primary;
+        font-size: $fontsize-l;
+      }
+
+      .navbar-brand {
+        font-family: $gotham-bold;
+      }
+
+      a {
+        font-size: $fontsize-m;
+        font-family: $gotham-rounded;
+        color: $color-secundary;
+      }
+
+      .ad-nav {
+        color: #000;
+      }
+
+    }
+  }
+
+
+
+
+
+
 }
 
 .hero-container {

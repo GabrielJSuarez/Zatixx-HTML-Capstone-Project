@@ -31,6 +31,25 @@ html {
   background-color: #383838;
 }
 
+.header-nav ul li .logo {
+  color: #d35266;
+  font-size: 4rem;
+}
+
+.header-nav ul li .navbar-brand {
+  font-family: "Gotham Bold";
+}
+
+.header-nav ul li a {
+  font-size: 1.8rem;
+  font-family: "Gotham Rounded Light";
+  color: #888;
+}
+
+.header-nav ul li .ad-nav {
+  color: #000;
+}
+
 .hero-container {
   background-color: #d35266;
 }
