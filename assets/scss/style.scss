@@ -1,14 +1,12 @@
-// fonts
-@import "fonts";
-
 // Variables
 @import "variables";
 
+// fonts
+@import "fonts";
+
 // Globals
 
-html {
-  font-size: 62.5%; //REM Reset
-}
+@import "globals";
 
 // -------
 
@@ -19,26 +17,29 @@ html {
 }
 
 .header-nav {
-  ul {
-    li {
-      .logo {
+  li {
+    .logo {
+      color: $color-primary;
+      font-size: $fontsize-l;
+    }
+
+    .navbar-brand {
+      font-family: $gotham-bold;
+      font-size: $fontsize-m;
+    }
+
+    a {
+      font-size: $fontsize-s;
+      font-family: $gotham-rounded;
+      color: $color-secundary;
+
+      &:hover {
         color: $color-primary;
-        font-size: $fontsize-l;
       }
+    }
 
-      .navbar-brand {
-        font-family: $gotham-bold;
-      }
-
-      a {
-        font-size: $fontsize-m;
-        font-family: $gotham-rounded;
-        color: $color-secundary;
-      }
-
-      .ad-nav {
-        color: #000;
-      }
+    .ad-nav {
+      background-color: $color-primary;
     }
   }
 }
