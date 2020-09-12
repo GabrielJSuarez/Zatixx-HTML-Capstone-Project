@@ -1,0 +1,10 @@
+// Mixins
+@mixin spacing($space) {
+  letter-spacing: $space;
+}
+
+@mixin font-style($fontfamily, $fontsize, $fontcolor) {
+  font-family: $fontfamily;
+  font-size: $fontsize;
+  color: $fontcolor;
+}
