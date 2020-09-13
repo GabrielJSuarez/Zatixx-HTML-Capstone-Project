@@ -13,7 +13,7 @@
 
 // -------
 
-// Navigation
+// Header
 
 .nav-container {
   background-color: $color-tertiary;
@@ -44,6 +44,8 @@
     }
   }
 }
+
+// Hero
 
 .hero-container {
   background-color: $color-primary;
@@ -197,5 +199,59 @@
       color: $color-secundary;
     }
 
+  }
+}
+
+//----------------
+
+// Footer 
+
+footer {
+  .footer-info {
+    i {
+      font-size: 6.5rem;
+      color: $color-secundary;
+    }
+
+    h3 {
+      @include font-style($helvetica-medium, $fontsize-m, $color-secundary);
+    }
+
+    p {
+      @include font-style($helvetica-medium, $fontsize-xs, $color-secundary);
+    }
+  }
+
+  .footer-nav {
+    .border-bottom {
+      border-bottom-color: $color-primary !important; //Overwritting the !important rule in Bootstraps borders
+
+      h3 {
+        @include font-style($helvetica-medium, $fontsize-s, $color-primary);
+      }
+    }
+
+    nav {
+      a {
+        @include font-style($helvetica-medium, $fontsize-xs, $color-secundary);
+
+        i {
+          font-size: $fontsize-s;
+          color: $color-tertiary;
+        }
+
+        &:hover {
+          color: $color-primary;
+        }
+      }
+
+
+    }
+  }
+
+  .footer-copyright {
+    p {
+      @include font-style($helvetica-medium, $fontsize-xs, $color-secundary);
+    }
   }
 }
