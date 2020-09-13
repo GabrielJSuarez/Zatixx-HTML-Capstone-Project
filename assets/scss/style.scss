@@ -32,7 +32,7 @@
     }
 
     a {
-      @include font-style($gotham-rounded, $fontsize-s, $color-secundary);
+      @include font-style($gotham-rounded, $fontsize-xs, $color-secundary);
 
       &:hover {
         color: $color-primary;
@@ -96,9 +96,9 @@
     }
 
     .search-buttom {
-      width: 12rem;
+      width: 18rem;
       background-color: $color-tertiary;
-      @include font-style($gotham-rounded, $fontsize-s, $color-secundary)
+      @include font-style($gotham-rounded, 1.8rem, $color-secundary)
     }
   }
 
@@ -109,3 +109,58 @@
 // ------------
 
 // Hot Adds Section
+
+.ads-container {
+  width: 60%;
+
+  h2 {
+    @include font-style($helvetica-medium, $fontsize-s, $color-secundary);
+  }
+}
+
+.ad-cont {
+  display: block !important;
+
+  .adds-head {
+    @include font-style($helvetica-medium, $fontsize-m, $color-primary);
+  }
+
+  .ad-bod {
+    @include font-style($helvetica-light, $fontsize-xs, $color-secundary);
+    line-height: 1.2;
+
+    span {
+      @include font-style($helvetica-medium, $fontsize-xs, $color-tertiary);
+    }
+  }
+
+  .btn-custom {
+    @include btn-main($color-primary, $color-light, $fontsize-s, $helvetica-medium);
+    border: 1px solid $color-tertiary;
+
+    &:hover {
+      background-color: darken($color-primary, 10%);
+
+    }
+  }
+
+}
+
+
+.carousel {
+
+  .btn-prev {
+    left: -131px;
+  }
+
+  .btn-next {
+    right: -131px;
+  }
+
+  .carousel-btn {
+    background-color: darken($color-primary, 15%);
+    border-radius: 50px;
+    color: $color-light;
+    font-size: $fontsize-xl;
+  }
+}
