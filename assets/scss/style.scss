@@ -86,7 +86,7 @@
 
   .hero-search {
     z-index: $zindex1;
-    width: 70%;
+    width: 100rem;
 
     .form-size {
       height: 5.5rem;
@@ -111,26 +111,24 @@
 // Hot Adds Section
 
 .ads-container {
-  width: 70%;
+  width: 100rem;
 
   h2 {
-    @include font-style($helvetica-medium, $fontsize-s, $color-secundary);
+    @include font-style($helvetica-medium, $fontsize-m, $color-secundary);
   }
 }
 
 .ad-cont {
-  display: block !important;
-
   .adds-head {
     @include font-style($helvetica-medium, $fontsize-m, $color-primary);
   }
 
   .ad-bod {
-    @include font-style($helvetica-light, $fontsize-xs, $color-secundary);
+    @include font-style($helvetica-light, $fontsize-s, $color-secundary);
     line-height: 1.2;
 
     span {
-      @include font-style($helvetica-medium, $fontsize-xs, $color-tertiary);
+      @include font-style($helvetica-medium, $fontsize-s, $color-tertiary);
     }
   }
 
@@ -150,11 +148,11 @@
 .carousel {
 
   .btn-prev {
-    left: -131px;
+    left: -150px;
   }
 
   .btn-next {
-    right: -131px;
+    right: -150px;
   }
 
   .carousel-btn {
