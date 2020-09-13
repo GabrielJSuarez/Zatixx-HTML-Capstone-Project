@@ -86,7 +86,7 @@
 
   .hero-search {
     z-index: $zindex1;
-    width: 60%;
+    width: 70%;
 
     .form-size {
       height: 5.5rem;
@@ -96,7 +96,7 @@
     }
 
     .search-buttom {
-      width: 18rem;
+
       background-color: $color-tertiary;
       @include font-style($gotham-rounded, 1.8rem, $color-secundary)
     }
@@ -111,7 +111,7 @@
 // Hot Adds Section
 
 .ads-container {
-  width: 60%;
+  width: 70%;
 
   h2 {
     @include font-style($helvetica-medium, $fontsize-s, $color-secundary);
