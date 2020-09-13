@@ -3,3 +3,57 @@
 html {
   font-size: 62.5%; //REM Reset
 }
+
+
+// Buttons 
+
+// Carousel buttons
+
+.btn-prev {
+  left: -150px;
+  opacity: 0.8;
+}
+
+.btn-next {
+  right: -150px;
+  opacity: 0.8;
+}
+
+.carousel-btn {
+  background-color: darken($color-primary, 5%);
+  border-radius: 50px;
+  color: $color-light;
+  font-size: $fontsize-xl;
+}
+
+.carousel-btn-dark {
+  font-size: $fontsize-xl;
+  color: $color-dark;
+}
+
+.btn-prev-product {
+  left: -65px;
+  opacity: 0.8;
+  width: 6.5rem;
+}
+
+.btn-next-product {
+  right: -65px;
+  opacity: 0.8;
+  width: 6.5rem;
+}
+
+
+// Product buttoms
+
+.btn-info {
+  color: $color-secundary;
+  background-color: $color-light;
+  border-color: $color-secundary;
+  border-radius: 0;
+
+  &:hover,
+  &:focus {
+    background-color: $color-primary;
+  }
+}

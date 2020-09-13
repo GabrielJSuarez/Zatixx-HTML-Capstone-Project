@@ -1,4 +1,8 @@
 // Mixins
+
+//----------
+
+// Fonts
 @mixin spacing($space) {
   letter-spacing: $space;
 }
@@ -8,6 +12,8 @@
   font-size: $fontsize;
   color: $fontcolor;
 }
+
+// Buttons
 
 @mixin btn-main($bg-color, $font-color, $font-size, $font-family) {
   background-color: $bg-color;
