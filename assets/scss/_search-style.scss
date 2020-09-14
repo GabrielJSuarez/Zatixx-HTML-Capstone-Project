@@ -110,7 +110,7 @@
         @include font-style($helvetica-light, $fontsize-s, $color-secundary);
     }
 
-    .btn-custom {
+    .btn-custom-search {
         @include btn-main($color-primary, $color-light, $fontsize-s, $helvetica-medium);
         border: 1px solid $color-tertiary;
 

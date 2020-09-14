@@ -18,8 +18,7 @@ html {
   @include font-style($gotham-rounded, $fontsize-s, $color-secundary);
 
   @media (min-width: $media-lg) {
-    height: 6rem;
-    font-size: $fontsize-m;
+    height: 5rem;
   }
 
 }
@@ -27,30 +26,53 @@ html {
 // Carousel buttons
 
 .btn-custom {
-  @include btn-main($color-primary, $color-light, $fontsize-s, $helvetica-medium);
+  @include btn-main($color-primary, $color-light, $fontsize-xs, $helvetica-medium);
   border: 1px solid $color-tertiary;
 
   &:hover {
     background-color: darken($color-primary, 10%);
+  }
 
+  @media (min-width: $media-lg) {
+    font-size: $fontsize-s;
   }
 }
 
 .btn-prev {
-  left: -150px;
+  left: -53px;
   opacity: 0.8;
+
+  @media (min-width: $media-md) {
+    left: -88px;
+  }
+
+  @media (min-width: $media-lg) {
+    left: -116px;
+  }
 }
 
 .btn-next {
-  right: -150px;
+  right: -53px;
   opacity: 0.8;
+
+  @media (min-width: $media-md) {
+    right: -87px;
+  }
+
+  @media (min-width: $media-lg) {
+    right: -116px;
+  }
 }
 
 .carousel-btn {
   background-color: darken($color-primary, 5%);
   border-radius: 50px;
   color: $color-light;
-  font-size: $fontsize-xl;
+  font-size: $fontsize-m;
+
+  @media (min-width: $media-md) {
+    font-size: $fontsize-l;
+  }
 }
 
 .carousel-btn-dark {

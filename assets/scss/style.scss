@@ -124,7 +124,7 @@
       }
 
       @media (min-width: $media-lg) {
-        font-size: 12rem;
+        font-size: 9rem;
       }
     }
 
@@ -136,7 +136,7 @@
       }
 
       @media (min-width: $media-lg) {
-        font-size: $fontsize-m;
+        font-size: $fontsize-s;
       }
     }
   }
@@ -160,8 +160,7 @@
     @include font-style($gotham-rounded, $fontsize-s, $color-secundary);
 
     @media (min-width: $media-lg) {
-      height: 6rem;
-      font-size: $fontsize-m;
+      height: 5rem;
     }
   }
 }
@@ -173,23 +172,43 @@
 // Hot Adds Section
 
 .ads-container {
-  width: $w-70;
+  width: 75%;
 
   h2 {
-    @include font-style($helvetica-medium, $fontsize-m, $color-secundary);
+    @include font-style($helvetica-medium, $fontsize-s, $color-secundary);
+
+    @media (min-width: $media-xl) {
+      font-size: $fontsize-m;
+    }
   }
 
   .ad-cont {
     .adds-head {
-      @include font-style($helvetica-medium, $fontsize-m, $color-primary);
+      @include font-style($helvetica-medium, $fontsize-s, $color-primary);
+
+      @media (min-width: $media-lg) {
+        font-size: $fontsize-m;
+      }
     }
 
     .ad-bod {
-      @include font-style($helvetica-light, $fontsize-s, $color-secundary);
+      @include font-style($helvetica-light, $fontsize-xs, $color-secundary);
       line-height: 1.2;
 
+      @media (min-width: $media-lg) {
+        font-size: $fontsize-s;
+      }
+
+      @media (min-width: $media-xl) {
+        font-size: 2rem
+      }
+
       span {
-        @include font-style($helvetica-medium, $fontsize-s, $color-tertiary);
+        @include font-style($helvetica-medium, $fontsize-xs, $color-tertiary);
+
+        @media (min-width: $media-lg) {
+          font-size: $fontsize-s;
+        }
       }
     }
 
@@ -201,25 +220,25 @@
 // Products Section
 
 .product-container {
-  width: $w-80;
+  width: 85%;
 }
 
 .product-title {
 
   h2 {
-    @include font-style($helvetica-bold, $fontsize-s, $color-tertiary);
+    @include font-style($helvetica-bold, $fontsize-xs, $color-tertiary);
     display: flex;
     align-items: center;
     ;
 
     i {
-      font-size: $fontsize-l;
+      font-size: $fontsize-m;
       color: $color-secundary;
       opacity: 0.7;
     }
 
     span {
-      @include font-style($helvetica-medium, $fontsize-xs, $color-secundary);
+      @include font-style($helvetica-medium, $fontsize-xxs, $color-secundary);
     }
   }
 
