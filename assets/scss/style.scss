@@ -27,6 +27,10 @@
 .header-nav {
   width: 100%;
 
+  @media (min-width: $media-lg) {
+    width: auto;
+  }
+
   li {
     .logo {
       color: $color-primary;
@@ -76,6 +80,10 @@
     height: 35rem;
   }
 
+  @media (min-width: $media-lg) {
+    height: 40rem;
+  }
+
   &::before {
     height: 0;
     position: absolute;
@@ -91,7 +99,12 @@
     z-index: 0;
 
     @media (min-width: $media-md) {
-      font-size: 34.5rem;
+      top: 45px;
+      font-size: 34rem;
+    }
+
+    @media (min-width: $media-lg) {
+      font-size: 39rem;
     }
   }
 
@@ -109,6 +122,10 @@
       @media (min-width: $media-md) {
         font-size: 7rem;
       }
+
+      @media (min-width: $media-lg) {
+        font-size: 12rem;
+      }
     }
 
     h3 {
@@ -116,6 +133,10 @@
 
       @media (min-width: $media-md) {
         font-size: $fontsize-s;
+      }
+
+      @media (min-width: $media-lg) {
+        font-size: $fontsize-m;
       }
     }
   }
@@ -126,7 +147,10 @@
 
     @media (min-width: $media-md) {
       width: 90%;
+    }
 
+    @media (min-width: $media-lg) {
+      width: 80%;
     }
   }
 
@@ -134,6 +158,11 @@
     height: 4rem;
     border-radius: 0;
     @include font-style($gotham-rounded, $fontsize-s, $color-secundary);
+
+    @media (min-width: $media-lg) {
+      height: 6rem;
+      font-size: $fontsize-m;
+    }
   }
 }
 

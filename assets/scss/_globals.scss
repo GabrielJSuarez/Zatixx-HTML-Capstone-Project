@@ -10,10 +10,17 @@ html {
 // Search Buttom
 
 .search-buttom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   height: 4rem;
   background-color: $color-tertiary;
   @include font-style($gotham-rounded, $fontsize-s, $color-secundary);
 
+  @media (min-width: $media-lg) {
+    height: 6rem;
+    font-size: $fontsize-m;
+  }
 
 }
 
