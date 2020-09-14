@@ -57,25 +57,11 @@
 
 }
 
-// Search Ads
-
-.ad-hover {
-    &:hover {
-        background-color: $color-light;
-
-    }
-}
-
 // Form bar
 
 .form-bar {
     div {
         @include font-style($helvetica-medium, $fontsize-xs, $color-secundary);
-
-        input[type="checkbox"] {
-            border: 1px solid #000;
-        }
-
 
         .form-title {
             @include font-style($helvetica-medium, $fontsize-s, $color-tertiary);
@@ -83,6 +69,23 @@
     }
 }
 
+// Search Ads
+
+.ad-hover {
+    &:hover {
+        background-color: $color-light;
+    }
+}
+
+.search-result {
+    h2 {
+        @include font-style($helvetica-medium, $fontsize-xs, $color-secundary);
+
+        span {
+            color: $color-tertiary;
+        }
+    }
+}
 
 .ad-cont {
     .adds-head {
@@ -117,6 +120,18 @@
         }
     }
 }
+
+// Pagination 
+
+.page-link {
+    @include font-style($helvetica-medium, $fontsize-s, $color-tertiary);
+
+    &:hover {
+        background-color: $color-primary;
+        color: $color-light;
+    }
+}
+
 
 // Footer 
 
