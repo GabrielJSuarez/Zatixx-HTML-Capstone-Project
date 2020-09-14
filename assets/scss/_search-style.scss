@@ -66,6 +66,24 @@
     }
 }
 
+// Form bar
+
+.form-bar {
+    div {
+        @include font-style($helvetica-medium, $fontsize-xs, $color-secundary);
+
+        input[type="checkbox"] {
+            border: 1px solid #000;
+        }
+
+
+        .form-title {
+            @include font-style($helvetica-medium, $fontsize-s, $color-tertiary);
+        }
+    }
+}
+
+
 .ad-cont {
     .adds-head {
         @include font-style($helvetica-medium, $fontsize-s, $color-tertiary);
