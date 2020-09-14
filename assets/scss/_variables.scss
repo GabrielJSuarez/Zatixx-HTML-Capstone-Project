@@ -16,6 +16,7 @@ $helvetica-bold: "Helvetica Neue Bold";
 
 // Font Sizes
 
+$fontsize-xxs: 1rem;
 $fontsize-xs: 1.4rem;
 $fontsize-s: 1.8rem;
 $fontsize-m: 2.6rem;
@@ -30,3 +31,9 @@ $w-80: 85%;
 // Misc
 
 $zindex1: 1;
+
+// Media Queries
+
+$media-sm: 425px;
+$media-md: 768px;
+$media-lg: 1024px;

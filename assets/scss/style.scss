@@ -21,26 +21,32 @@
 
 .nav-container {
   background-color: $color-tertiary;
+
 }
 
 .header-nav {
+  width: 100%;
+
   li {
     .logo {
       color: $color-primary;
       font-size: $fontsize-l;
+
     }
 
     .navbar-brand {
-      @include font-style($gotham-bold, $fontsize-m, $color-light);
+      @include font-style($gotham-bold, $fontsize-s, $color-light);
       @include spacing(-2.5px);
+
     }
 
     a {
-      @include font-style($gotham-rounded, $fontsize-xs, $color-secundary);
+      @include font-style($gotham-rounded, $fontsize-xxs, $color-secundary);
 
       &:hover {
         color: $color-primary;
       }
+
     }
 
     .ad-nav {
@@ -56,20 +62,20 @@
   height: 38rem;
   z-index: -1;
 
-  &::before {
-    height: 0;
-    position: absolute;
-    top: -80px;
-    left: -210px;
-    content: "\f11b";
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    font-family: 'FontAwesome';
-    font-size: 50rem;
-    -webkit-transform: rotate(-45deg);
-    color: rgba(56, 56, 56, 0.2);
-    z-index: 0;
-  }
+  // &::before {
+  //   height: 0;
+  //   position: absolute;
+  //   top: -80px;
+  //   left: -210px;
+  //   content: "\f11b";
+  //   -webkit-transform: rotate(-45deg);
+  //   transform: rotate(-45deg);
+  //   font-family: 'FontAwesome';
+  //   font-size: 50rem;
+  //   -webkit-transform: rotate(-45deg);
+  //   color: rgba(56, 56, 56, 0.2);
+  //   z-index: 0;
+  // }
 
   .page-title {
     z-index: $zindex1;
