@@ -59,29 +59,29 @@
 
 .hero-container {
   background-color: $color-primary;
-  height: 38rem;
+  height: 40rem;
   z-index: -1;
 
-  // &::before {
-  //   height: 0;
-  //   position: absolute;
-  //   top: -80px;
-  //   left: -210px;
-  //   content: "\f11b";
-  //   -webkit-transform: rotate(-45deg);
-  //   transform: rotate(-45deg);
-  //   font-family: 'FontAwesome';
-  //   font-size: 50rem;
-  //   -webkit-transform: rotate(-45deg);
-  //   color: rgba(56, 56, 56, 0.2);
-  //   z-index: 0;
-  // }
+  &::before {
+    height: 0;
+    position: absolute;
+    top: 40px;
+    left: -216px;
+    content: "\f11b";
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    font-family: 'FontAwesome';
+    font-size: 36rem;
+    -webkit-transform: rotate(-45deg);
+    color: rgba(56, 56, 56, 0.2);
+    z-index: 0;
+  }
 
   .page-title {
     z-index: $zindex1;
 
     h1 {
-      @include font-style($gotham-bold, 8rem, $color-light);
+      @include font-style($gotham-bold, $fontsize-xl, $color-light);
       text-align: center;
 
       span {
@@ -90,28 +90,20 @@
     }
 
     h3 {
-      @include font-style($gotham-rounded, $fontsize-s, $color-light);
+      @include font-style($gotham-rounded, $fontsize-xs, $color-light);
     }
   }
 
   .hero-search {
-    z-index: $zindex1;
+    z-index: 1;
     width: $w-70;
-
-    .form-size {
-      height: 5.5rem;
-      width: 100%;
-      border-radius: 0;
-      @include font-style($gotham-rounded, $fontsize-s, $color-secundary);
-    }
-
-    .search-buttom {
-
-      background-color: $color-tertiary;
-      @include font-style($gotham-rounded, $fontsize-s, $color-secundary)
-    }
   }
 
+  .form-content {
+    height: 4rem;
+    border-radius: 0;
+    @include font-style($gotham-rounded, $fontsize-s, $color-secundary);
+  }
 }
 
 // Main Section

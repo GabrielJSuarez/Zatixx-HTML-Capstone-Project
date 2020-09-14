@@ -61,17 +61,17 @@
       </nav>
     </div>
 
-    <div class="hero-container d-flex flex-column align-items-center position-relative">
+    <div class="hero-container d-flex flex-column align-items-center">
       <!--Page Title-->
-      <div class="my-5 page-title">
+      <div class="page-title">
         <h1 class="hero-title text-white my-5">ZA<span>TT</span>IX</h1>
         <h3 class="text-white">
           Buying And Selling Your Consoles & Games in one Click!
         </h3>
       </div>
 
-      <!--Search Hero-->
-      <form class="hero-search mt-5">
+
+      <!-- <form class="hero-search mt-5">
         <div class="form">
           <div class="form-row pr-1 mr-3">
             <div class="col pr-0 pl-1">
@@ -99,7 +99,35 @@
 
 
         </div>
+      </form> -->
+
+      <!--Search Hero-->
+      <form class="hero-search">
+        <div class="row my-3">
+          <div class="col-12 my-3">
+            <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+            <select class="custom-select mr-sm-2 form-control form-content mx-auto" id="inlineFormCustomSelect">
+              <option selected>Choose...</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+
+          <div class="col-12 my-3">
+            <input type="text" class="form-control form-content mx-auto" placeholder="Last name">
+          </div>
+
+          <div class="col-12 my-3">
+            <input type="text" class="form-control form-content mx-auto" placeholder="Last name">
+          </div>
+
+          <a href="/pages/search.html" class="btn
+          w-50 mx-auto search-buttom my-3">Search</a>
+
+        </div>
       </form>
+
     </div>
   </header>
 
