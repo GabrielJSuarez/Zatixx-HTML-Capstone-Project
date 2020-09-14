@@ -21,7 +21,7 @@
 
 .nav-container {
   background-color: $color-tertiary;
-
+  z-index: -1;
 }
 
 .header-nav {
@@ -32,12 +32,18 @@
       color: $color-primary;
       font-size: $fontsize-l;
 
+      @media (min-width: $media-md) {
+        font-size: $fontsize-xl;
+      }
     }
 
     .navbar-brand {
       @include font-style($gotham-bold, $fontsize-s, $color-light);
       @include spacing(-2.5px);
 
+      @media (min-width: $media-md) {
+        font-size: $fontsize-m;
+      }
     }
 
     a {
@@ -45,6 +51,10 @@
 
       &:hover {
         color: $color-primary;
+      }
+
+      @media (min-width: $media-md) {
+        font-size: $fontsize-xs;
       }
 
     }
@@ -62,6 +72,10 @@
   height: 40rem;
   z-index: -1;
 
+  @media (min-width: $media-md) {
+    height: 35rem;
+  }
+
   &::before {
     height: 0;
     position: absolute;
@@ -71,10 +85,14 @@
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
     font-family: 'FontAwesome';
-    font-size: 36rem;
+    font-size: 37rem;
     -webkit-transform: rotate(-45deg);
     color: rgba(56, 56, 56, 0.2);
     z-index: 0;
+
+    @media (min-width: $media-md) {
+      font-size: 34.5rem;
+    }
   }
 
   .page-title {
@@ -87,16 +105,29 @@
       span {
         @include spacing(-8px);
       }
+
+      @media (min-width: $media-md) {
+        font-size: 7rem;
+      }
     }
 
     h3 {
       @include font-style($gotham-rounded, $fontsize-xs, $color-light);
+
+      @media (min-width: $media-md) {
+        font-size: $fontsize-s;
+      }
     }
   }
 
   .hero-search {
     z-index: 1;
     width: $w-70;
+
+    @media (min-width: $media-md) {
+      width: 90%;
+
+    }
   }
 
   .form-content {

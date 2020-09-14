@@ -12,7 +12,9 @@ html {
 .search-buttom {
   height: 4rem;
   background-color: $color-tertiary;
-  @include font-style($gotham-rounded, $fontsize-s, $color-secundary)
+  @include font-style($gotham-rounded, $fontsize-s, $color-secundary);
+
+
 }
 
 // Carousel buttons
