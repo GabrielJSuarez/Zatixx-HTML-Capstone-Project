@@ -11,6 +11,10 @@
 
 @import "globals";
 
+// Search page Styles 
+
+@import "search-style";
+
 // -------
 
 // Header
@@ -55,13 +59,14 @@
   &::before {
     height: 0;
     position: absolute;
-    top: -118px;
-    left: -60px;
+    top: -80px;
+    left: -210px;
     content: "\f11b";
+    -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
     font-family: 'FontAwesome';
-    font-size: 45rem;
-    -webkit-transform: rotate(-35deg);
+    font-size: 50rem;
+    -webkit-transform: rotate(-45deg);
     color: rgba(56, 56, 56, 0.2);
     z-index: 0;
   }
@@ -130,15 +135,7 @@
       }
     }
 
-    .btn-custom {
-      @include btn-main($color-primary, $color-light, $fontsize-s, $helvetica-medium);
-      border: 1px solid $color-tertiary;
 
-      &:hover {
-        background-color: darken($color-primary, 10%);
-
-      }
-    }
   }
 
 }

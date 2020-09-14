@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!--Font Awesome Script-->
+    <script src="https://kit.fontawesome.com/1ba545dca5.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+
+    <!--Title-->
+    <title>ZATIXX - Search</title>
+
+    <!--Custom Style Sheet-->
+    <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+
+<body class="bg-light">
+    <header>
+        <div class="nav-container">
+            <nav class="d-flex justify-content-between mx-5 py-2">
+                <ul class="header-nav nav mx-5 align-items-center">
+                    <li class="pr-4">
+                        <i class="fas fa-gamepad logo"></i>
+                    </li>
+                    <li class="pr-4">
+                        <a class="navbar-brand text-white" href="#"> ZATTIX </a>
+                    </li>
+                    <li class="nav-item pr-4 text-uppercase">
+                        <a class="nav-link" href="#"><i class="fas fa-home"></i> Home</a>
+                    </li>
+                    <li class="nav-item pr-4 text-uppercase">
+                        <a class="nav-link" href="#"><i class="fas fa-warehouse"></i> Catalog</a>
+                    </li>
+                    <li class="nav-item pr-4 text-uppercase">
+                        <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i> Purchase list</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="ad-nav btn nav-link rounded text-white text-uppercase href=" #">Post an add</a>
+                    </li>
+                </ul>
+
+                <ul class="header-nav nav mx-5 d-lg-flex align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#"><i class="far fa-bell"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Ginn & Juice</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img class="rounded-circle"
+                                src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1600&q=80"
+                                alt="User" width="40px" /></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="hero-container-search d-flex flex-column align-items-center position-relative pt-4">
+            <!--Page Title-->
+            <div class="page-title-search">
+                <h1 class="hero-title text-white mb-0">ZA<span>TT</span>IX</h1>
+                <h3 class="text-white">
+                    Buying And Selling Your Consoles & Games in one Click!
+                </h3>
+            </div>
+
+            <!--Search Hero-->
+            <form class="hero-search pt-5">
+                <div class="form">
+                    <div class="form-row pr-1 mr-3">
+                        <div class="col pr-0 pl-1">
+                            <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                            <select class="form-control form-size" id="inlineFormCustomSelect">
+                                <option selected>All Items</option>
+                                <option value="1">Consoles</option>
+                                <option value="2">Peripherals</option>
+                                <option value="3">Games</option>
+                            </select>
+                        </div>
+
+                        <div class="col-4 pr-0 pl-1">
+                            <input type="text" class="form-control form-size" placeholder="For what plataform?">
+                        </div>
+
+                        <div class="col pr-0 pl-1">
+                            <input type="search" class="form-control form-size" placeholder="Search">
+                        </div>
+
+                        <div class="col">
+                            <button type="submit" class="btn search-buttom w-100 h-100">Search</button>
+                        </div>
+                    </div>
+
+
+                </div>
+            </form>
+        </div>
+    </header>
+
+    <main class="bg-light container-fluid">
+        <div class="row ">
+            <div class="col border-right sticky-top" style="height: 1000px;">
+                <form>
+                    <div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox1">New</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                            <label class="form-check-label" for="inlineCheckbox2">Used</label>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2 class="border-bottom">Console</h2>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                                Xbox
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                                Play Station
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                                Nintendo
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                                Retro
+                            </label>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2 class="border-bottom">Type</h2>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                                Console
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                                Peripherals
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                                Games
+                            </label>
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <h2 class="border-bottom">Price Range</h2>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                                10$ -100$
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                                100$ -500$
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                                500$ -1000$
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                                + 1000$
+                            </label>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+            <div class="col-10 px-0">
+                <div class="border py-4 my-4 ad-hover">
+                    <div class="d-flex ">
+                        <img src="https://images.unsplash.com/photo-1583505222294-f21455e8dc1b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+                            class="d-block w-100 col-4" alt="..." />
+                        <div class="col ad-cont my-3">
+                            <h3 class="adds-head">Console #1 (Placeholder Title)</h3>
+                            <p class="ad-condition">
+                                new
+                            </p>
+                            <p class="ad-bod pb-2">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Ipsam perferendis maxime quaerat nulla recusandae sit
+                                cupiditate, pariatur alias molestias neque obcaecati eveniet
+                                libero velit, consectetur hic, natus voluptates harum nam!
+                            </p>
+
+                            <p class="ad-bod">
+                                <span>Location:</span> Mordor, Middle Earth.
+                            </p>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p class="publish-date mb-0">
+                                    13 Sep, 2020
+                                </p>
+
+                                <div>
+                                    <button type="button" class="btn btn-custom px-5 py-2 mr-4">
+                                        Ask more information
+                                    </button>
+
+                                    <button type="button" class="btn btn-custom px-5 py-2">
+                                        500$
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="border py-4 my-4 ad-hover">
+                    <div class="d-flex ">
+                        <img src="https://images.unsplash.com/photo-1507457379470-08b800bebc67?ixlib=rb-1.2.1&auto=format&fit=crop&w=2168&q=80"
+                            class="d-block w-100 col-4" alt="..." />
+                        <div class="col ad-cont my-3">
+                            <h3 class="adds-head">Console #2 (Placeholder Title)</h3>
+                            <p class="ad-condition">
+                                new
+                            </p>
+                            <p class="ad-bod pb-2">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Ipsam perferendis maxime quaerat nulla recusandae sit
+                                cupiditate, pariatur alias molestias neque obcaecati eveniet
+                                libero velit, consectetur hic, natus voluptates harum nam!
+                            </p>
+
+                            <p class="ad-bod">
+                                <span>Location:</span> Mordor, Middle Earth.
+                            </p>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p class="publish-date mb-0">
+                                    13 Sep, 2020
+                                </p>
+
+                                <div>
+                                    <button type="button" class="btn btn-custom px-5 py-2 mr-4">
+                                        Ask more information
+                                    </button>
+
+                                    <button type="button" class="btn btn-custom px-5 py-2">
+                                        500$
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="border py-4 my-4 ad-hover">
+                    <div class="d-flex ">
+                        <img src="https://images.unsplash.com/photo-1585857188938-2f7ae5afb6f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+                            class="d-block w-100 col-4" alt="..." />
+                        <div class="col ad-cont my-3">
+                            <h3 class="adds-head">Console #3 (Placeholder Title)</h3>
+                            <p class="ad-condition">
+                                new
+                            </p>
+                            <p class="ad-bod pb-2">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Ipsam perferendis maxime quaerat nulla recusandae sit
+                                cupiditate, pariatur alias molestias neque obcaecati eveniet
+                                libero velit, consectetur hic, natus voluptates harum nam!
+                            </p>
+
+                            <p class="ad-bod">
+                                <span>Location:</span> Mordor, Middle Earth.
+                            </p>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p class="publish-date mb-0">
+                                    13 Sep, 2020
+                                </p>
+
+                                <div>
+                                    <button type="button" class="btn btn-custom px-5 py-2 mr-4">
+                                        Ask more information
+                                    </button>
+
+                                    <button type="button" class="btn btn-custom px-5 py-2">
+                                        500$
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="border py-4 my-4 ad-hover">
+                    <div class="d-flex ">
+                        <img src="https://images.unsplash.com/photo-1532651883115-a8245c7a8d05?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1955&q=80    "
+                            class="d-block w-100 col-4" alt="..." />
+                        <div class="col ad-cont my-3">
+                            <h3 class="adds-head">Console #4 (Placeholder Title)</h3>
+                            <p class="ad-condition">
+                                new
+                            </p>
+                            <p class="ad-bod pb-2">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Ipsam perferendis maxime quaerat nulla recusandae sit
+                                cupiditate, pariatur alias molestias neque obcaecati eveniet
+                                libero velit, consectetur hic, natus voluptates harum nam!
+                            </p>
+
+                            <p class="ad-bod">
+                                <span>Location:</span> Mordor, Middle Earth.
+                            </p>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p class="publish-date mb-0">
+                                    13 Sep, 2020
+                                </p>
+
+                                <div>
+                                    <button type="button" class="btn btn-custom px-5 py-2 mr-4">
+                                        Ask more information
+                                    </button>
+
+                                    <button type="button" class="btn btn-custom px-5 py-2">
+                                        500$
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="border py-4 my-4 ad-hover">
+                    <div class="d-flex ">
+                        <img src="https://images.unsplash.com/photo-1588689115724-a624efec3c93?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+                            class="d-block w-100 col-4" alt="..." />
+                        <div class="col ad-cont my-3">
+                            <h3 class="adds-head">Console #5 (Placeholder Title)</h3>
+                            <p class="ad-condition">
+                                new
+                            </p>
+                            <p class="ad-bod pb-2">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Ipsam perferendis maxime quaerat nulla recusandae sit
+                                cupiditate, pariatur alias molestias neque obcaecati eveniet
+                                libero velit, consectetur hic, natus voluptates harum nam!
+                            </p>
+
+                            <p class="ad-bod">
+                                <span>Location:</span> Mordor, Middle Earth.
+                            </p>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p class="publish-date mb-0">
+                                    13 Sep, 2020
+                                </p>
+
+                                <div>
+                                    <button type="button" class="btn btn-custom px-5 py-2 mr-4">
+                                        Ask more information
+                                    </button>
+
+                                    <button type="button" class="btn btn-custom px-5 py-2">
+                                        500$
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav aria-label="Page navigation example">
+            <ul class="pagination pagination-lg justify-content-center my-5">
+
+                <li class="pagination-custom page-item mr-4"><a class="page-link" href="#">1</a></li>
+                <li class="pagination-custom page-item mr-4"><a class="page-link" href="#">2</a></li>
+                <li class="pagination-custom page-item mr-4"><a class="page-link" href="#">3</a></li>
+                <li class="pagination-custom page-item mr-4"><a class="page-link" href="#">4</a></li>
+                <li class="pagination-custom page-item mr-4"><a class="page-link" href="#">...</a></li>
+                <li class="pagination-custom page-item"><a class="page-link" href="#">7</a></li>
+
+            </ul>
+        </nav>
+    </main>
+
+    <footer class="bg-white container-fluid ">
+        <div class="row mx-auto py-5">
+            <div class="col-5 footer-info px-5">
+                <div class="w-75">
+                    <div class="d-flex align-items-center py-2">
+                        <i class="fas fa-gamepad logo mr-4"></i>
+                        <h3 class="" href="#">ZATTIX </h3>
+                        </li>
+                    </div>
+
+                    <p class="footer-text text-justify mt-2">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed
+                        maximus risus. Integer ultricies odio et libero pulvinar, ac
+                        ultrices metus bibendum. Phasellus at nunc massa. Mauris turpis est,
+                        egestas at enim non, luctus auctor nunc. Cras pharetra fermentum
+                        dictum. Phasellus eget facilisis sem. Quisque consequat, nisl in
+                        mollis gravida, mi felis maximus nibh, aliquam cursus sapien sapien
+                        eu turpis. Phasellus pulvinar ligula sed convallis vulputate.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-2 footer-nav mr-5">
+                <div class="border-bottom py-2">
+                    <h3>Categories</h3>
+                </div>
+
+                <nav class="pt-3">
+                    <div class="d-flex flex-column">
+                        <a href="#" class="py-2 text-decoration-none">Sale Categort #1</a>
+                        <a href="#" class="py-2 text-decoration-none">Sale Categort #2</a>
+                        <a href="#" class="py-2 text-decoration-none">Sale Categort #3</a>
+                        <a href="#" class="py-2 text-decoration-none">Sale Categort #4</a>
+                        <a href="#" class="py-2 text-decoration-none">Sale Categort #5</a>
+                        <a href="#" class="py-2 text-decoration-none">Sale Categort #6</a>
+                        <a href="#" class="py-2 text-decoration-none">Sale Categort #7</a>
+                        <a href="#" class="py-2 text-decoration-none">Sale Categort #8</a>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="col-2 footer-nav mr-5">
+                <div class="border-bottom py-2">
+                    <h3>Contact Us</h3>
+                </div>
+
+                <nav class="pt-3">
+                    <div class="d-flex flex-column">
+                        <a href="#" class="py-2 text-decoration-none"><i class="pr-3 fab fa-facebook-f"></i>
+                            Facebook</a>
+                        <a href="#" class="py-2 text-decoration-none"><i class="pr-3 fab fa-twitter"></i> Twitter</a>
+                        <a href="#" class="py-2 text-decoration-none"><i class="pr-3 fab fa-instagram"></i>
+                            Instagram</a>
+                        <a href="#" class="py-2 text-decoration-none"><i class="pr-3 fas fa-envelope"></i> Email</a>
+                        <a href="#" class="py-2 text-decoration-none"><i class="pr-3 fab fa-tumblr"></i> Tumblr</a>
+                        <a href="#" class="py-2 text-decoration-none"><i class="pr-3 fab fa-pinterest-p"></i>
+                            Pinterest</a>
+                        <a href="#" class="py-2 text-decoration-none"><i class="pr-3 fab fa-amazon"></i> Amazon</a>
+                        <a href="#" class="py-2 text-decoration-none"><i class="pr-3 fas fa-user-friends"></i> Market
+                            Place</a>
+
+                    </div>
+                </nav>
+            </div>
+
+            <div class="col-2 footer-nav px-0">
+                <div class="d-flex flex-column lenguage-btn h-100">
+                    <div class="d-flex justify-content-between my-5">
+                        <h3 class=" mb-0">Country</h3>
+                        <button type="button" class="btn btn-custom px-5 py-2 bg-white ">
+                            Switch
+                        </button>
+                    </div>
+
+                    <div class="d-flex justify-content-between my-0">
+                        <h3 class="mb-0">Lenguage</h3>
+                        <button type="button" class="btn btn-custom px-5 py-2 bg-white">
+                            English
+                        </button>
+                    </div>
+
+                    <div class="d-flex justify-content-between mt-5">
+                        <h3 class=" mb-0">Currency</h3>
+                        <button type="button" class="btn btn-custom px-5 py-2 bg-white">
+                            US
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-top py-3 footer-copyright">
+            <p class="text-center">Copyright&#169; 2020 Zatiix.com. All rights reserved. Designed By Mohammed Awad.
+                Build by
+                Gabriel "Ginn" Suárez</p>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

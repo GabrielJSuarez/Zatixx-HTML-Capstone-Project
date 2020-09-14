@@ -9,6 +9,16 @@ html {
 
 // Carousel buttons
 
+.btn-custom {
+  @include btn-main($color-primary, $color-light, $fontsize-s, $helvetica-medium);
+  border: 1px solid $color-tertiary;
+
+  &:hover {
+    background-color: darken($color-primary, 10%);
+
+  }
+}
+
 .btn-prev {
   left: -150px;
   opacity: 0.8;
@@ -55,5 +65,29 @@ html {
   &:hover,
   &:focus {
     background-color: $color-primary;
+  }
+}
+
+// Footer buttoms 
+
+.lenguage-btn {
+  div {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  h3 {
+    @include font-style($helvetica-bold, $fontsize-s, $color-primary);
+  }
+
+  button {
+    @include font-style($helvetica-medium, $fontsize-xs, $color-secundary);
+    border-color: $color-secundary;
+    width: 12rem;
+
+    &:hover {
+      color: $color-primary;
+      border-color: $color-primary;
+    }
   }
 }

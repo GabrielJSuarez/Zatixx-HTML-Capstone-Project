@@ -1,0 +1,113 @@
+// Search Hero
+
+.hero-container-search {
+    background-color: $color-primary;
+    height: 20rem;
+    z-index: -1;
+
+    &::before {
+        height: 0;
+        position: absolute;
+        top: -118px;
+        left: -150px;
+        content: "\f11b";
+        transform: rotate(-45deg);
+        font-family: 'FontAwesome';
+        font-size: 35rem;
+        -webkit-transform: rotate(-35deg);
+        color: rgba(56, 56, 56, 0.2);
+        z-index: 0;
+    }
+
+    .page-title-search {
+        width: $w-70;
+        z-index: $zindex1;
+
+        h1 {
+            @include font-style($gotham-bold, $fontsize-l, $color-light);
+
+
+            span {
+                @include spacing(-8px);
+            }
+        }
+
+        h3 {
+            @include font-style($gotham-rounded, $fontsize-s, $color-light);
+        }
+    }
+
+    .hero-search {
+        z-index: $zindex1;
+        width: $w-70;
+
+        .form-size {
+            height: 5.5rem;
+            width: 100%;
+            border-radius: 0;
+            @include font-style($gotham-rounded, $fontsize-s, $color-secundary);
+        }
+
+        .search-buttom {
+
+            background-color: $color-tertiary;
+            @include font-style($gotham-rounded, $fontsize-s, $color-secundary)
+        }
+    }
+
+}
+
+// Search Ads
+
+.ad-hover {
+    &:hover {
+        background-color: $color-light;
+
+    }
+}
+
+.ad-cont {
+    .adds-head {
+        @include font-style($helvetica-medium, $fontsize-s, $color-tertiary);
+    }
+
+    .ad-condition {
+        @include font-style($helvetica-medium, $fontsize-xs, $color-primary);
+        text-transform: uppercase;
+    }
+
+    .ad-bod {
+        @include font-style($helvetica-light, $fontsize-s, $color-secundary);
+        line-height: 1.2;
+
+        span {
+            @include font-style($helvetica-medium, $fontsize-s, $color-tertiary);
+        }
+    }
+
+    .publish-date {
+        @include font-style($helvetica-light, $fontsize-s, $color-secundary);
+    }
+
+    .btn-custom {
+        @include btn-main($color-primary, $color-light, $fontsize-s, $helvetica-medium);
+        border: 1px solid $color-tertiary;
+
+        &:hover {
+            background-color: darken($color-primary, 10%);
+
+        }
+    }
+}
+
+// Footer 
+
+footer {
+    .footer-info {
+        .footer-text {
+            @include font-style($helvetica-medium, $fontsize-xs, $color-secundary);
+            line-height: 2;
+        }
+    }
+
+}
