@@ -1,12 +1,12 @@
+/* stylelint-disable */
+
 // Globals
 
 html {
   font-size: 62.5%; //REM Reset
 }
 
-
 // Buttons 
-
 // Search Buttom
 
 .search-buttom {
@@ -117,12 +117,12 @@ html {
 
   @media (min-width: $media-lg) {
     left: -40px;
-    top: 0px;
+    top: 0;
   }
 
   @media (min-width: $media-xl) {
     left: -45px;
-    top: 0px;
+    top: 0;
   }
 }
 
@@ -134,20 +134,19 @@ html {
 
   @media (min-width: $media-md) {
     right: -33px;
-    top: 0px;
+    top: 0;
   }
 
   @media (min-width: $media-lg) {
     right: -40px;
-    top: 0px;
+    top: 0;
   }
 
   @media (min-width: $media-xl) {
     right: -45px;
-    top: 0px;
+    top: 0;
   }
 }
-
 
 // Product buttoms
 
