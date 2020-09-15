@@ -253,9 +253,9 @@
 
 .pr-content {
   h5 {
-    @include font-style($helvetica-bold, $fontsize-s, darken($color-secundary, 10%));
+    @include font-style($helvetica-bold, $fontsize-xs, darken($color-secundary, 10%));
     overflow-y: hidden;
-    height: 4rem;
+    height: 3rem;
   }
 
   p {
@@ -265,7 +265,7 @@
   }
 
   .pr-text {
-    @include font-style($helvetica-light, $fontsize-xs, $color-tertiary);
+    @include font-style($helvetica-light, $fontsize-xxs, $color-tertiary);
 
     .location {
       color: $color-secundary;
