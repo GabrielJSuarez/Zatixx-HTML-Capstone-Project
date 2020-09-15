@@ -37,7 +37,7 @@ The project is public.
 Contributions, issues and feature requests are welcome!
 
 ## Acknowledgments
-
+- Design idea by [ Mohammed Awad](https://www.behance.net/M_Awad/), [desing](https://www.behance.net/gallery/24796463/ZATTIX)
 - Font Awesome Was Use for the icons of the page
 - Gotham & Helvetica Typography were used in this project
 - Bootstrap 4 Framework was used in it's entirety for this project
