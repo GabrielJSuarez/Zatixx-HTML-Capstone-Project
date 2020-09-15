@@ -17,7 +17,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://gabrieljsuarez.github.io/Using-Boostrap/)
+[Live Demo Link](https://gabrieljsuarez.github.io/Zatixx-HTML-Capstone-Project/)
 
 
 ## Getting Started
@@ -38,9 +38,10 @@ Contributions, issues and feature requests are welcome!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Font Awesome Was Use for the icons of the page
+- Gotham & Helvetica Typography were used in this project
+- Bootstrap 4 Framework was used in it's entirety for this project
+- Live Sass Compiler VS Code Extention Was used to compile SCSS code into Plain CSS with the support of Node JS
 
 ## Show your support
 
