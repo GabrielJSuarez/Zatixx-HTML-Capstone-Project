@@ -65,10 +65,6 @@
         color: $color-primary;
       }
 
-      @media (min-width: $media-md) {
-        font-size: $fontsize-xs;
-      }
-
       @media (min-width: $media-xl) {
         font-size: $fontsize-s;
       }

@@ -2,72 +2,157 @@
 
 .hero-container-search {
     background-color: $color-primary;
-    height: 20rem;
+    height: 40rem;
     z-index: -1;
+
+    @media (min-width: $media-md) {
+        height: 17rem;
+    }
+
+    @media (min-width: $media-lg) {
+        height: 23rem;
+    }
 
     &::before {
         height: 0;
         position: absolute;
-        top: -118px;
-        left: -150px;
+        top: 40px;
+        left: -216px;
         content: "\f11b";
+        -webkit-transform: rotate(-45deg);
         transform: rotate(-45deg);
         font-family: 'FontAwesome';
-        font-size: 35rem;
-        -webkit-transform: rotate(-35deg);
+        font-size: 37rem;
+        -webkit-transform: rotate(-45deg);
         color: rgba(56, 56, 56, 0.2);
         z-index: 0;
+
+        @media (min-width: $media-md) {
+            top: 50px;
+            left: -110px;
+            font-size: 16.5rem;
+
+        }
+
+        @media (min-width: $media-lg) {
+            left: -150px;
+            font-size: 20rem;
+        }
     }
 
-    .page-title-search {
-        width: $w-70;
+    .page-title {
         z-index: $zindex1;
 
         h1 {
-            @include font-style($gotham-bold, $fontsize-l, $color-light);
-
+            @include font-style($gotham-bold, $fontsize-xl, $color-light);
 
             span {
                 @include spacing(-8px);
             }
+
+            @media (min-width: $media-md) {
+                font-size: $fontsize-xl;
+            }
+
+            @media (min-width: $media-lg) {
+                font-size: 6rem;
+            }
         }
 
         h3 {
-            @include font-style($gotham-rounded, $fontsize-s, $color-light);
+            @include font-style($gotham-rounded, $fontsize-xs, $color-light);
+
+            @media (min-width: $media-lg) {
+                font-size: $fontsize-s;
+            }
         }
     }
 
     .hero-search {
-        z-index: $zindex1;
+        z-index: 1;
         width: $w-70;
 
-        .form-size {
-            height: 5.5rem;
-            width: 100%;
-            border-radius: 0;
-            @include font-style($gotham-rounded, $fontsize-s, $color-secundary);
+        @media (min-width: $media-md) {
+            width: 90%;
         }
 
-        .search-buttom {
-
-            background-color: $color-tertiary;
-            @include font-style($gotham-rounded, $fontsize-s, $color-secundary)
+        @media (min-width: $media-lg) {
+            width: 80%;
         }
     }
 
+    .form-content {
+        height: 4rem;
+        border-radius: 0;
+        @include font-style($gotham-rounded, $fontsize-xs, $color-secundary);
+
+        @media (min-width: $media-md) {
+            height: 3rem;
+        }
+
+        @media (min-width: $media-lg) {
+            height: 5rem;
+            font-size: $fontsize-s;
+        }
+    }
+}
+
+.search-buttom-search {
+    @extend .search-buttom;
+
+    @media (min-width: $media-md) {
+        height: 3rem;
+        font-size: $fontsize-xs;
+    }
+
+    @media (min-width: $media-lg) {
+        height: 5rem;
+        font-size: $fontsize-xs;
+    }
 }
 
 // Form bar
 
-.form-bar {
-    div {
-        @include font-style($helvetica-medium, $fontsize-xs, $color-secundary);
+.form-container {
+    height: 0px;
 
-        .form-title {
-            @include font-style($helvetica-medium, $fontsize-s, $color-tertiary);
+    @media (min-width: $media-md) {
+        height: 515px;
+    }
+
+    @media (min-width: $media-xl) {
+        height: 575px;
+    }
+
+    .form-bar {
+        div {
+            @include font-style($helvetica-medium, $fontsize-xxs, $color-secundary);
+
+            @media (min-width: $media-lg) {
+                font-size: $fontsize-xs;
+            }
+
+            @media (min-width: $media-xl) {
+                font-size: $fontsize-s;
+            }
+
+
+            .form-title {
+                @include font-style($helvetica-medium, $fontsize-xs, $color-tertiary);
+
+                @media (min-width: $media-lg) {
+                    font-size: $fontsize-s;
+                }
+
+                @media (min-width: $media-xl) {
+                    font-size: $fontsize-m;
+                }
+            }
         }
     }
 }
+
+
 
 // Search Ads
 
@@ -84,17 +169,29 @@
         span {
             color: $color-tertiary;
         }
+
+        @media (min-width: $media-lg) {
+            font-size: $fontsize-s;
+        }
     }
 }
 
 .ad-cont {
     .adds-head {
         @include font-style($helvetica-medium, $fontsize-s, $color-tertiary);
+
+        @media (min-width: $media-xl) {
+            font-size: $fontsize-m;
+        }
     }
 
     .ad-condition {
         @include font-style($helvetica-medium, $fontsize-xs, $color-primary);
         text-transform: uppercase;
+
+        @media (min-width: $media-xl) {
+            font-size: $fontsize-s;
+        }
     }
 
     .ad-bod {
@@ -103,16 +200,50 @@
 
         span {
             @include font-style($helvetica-medium, $fontsize-s, $color-tertiary);
+
+            @media (min-width: $media-lg) {
+                font-size: $fontsize-xs;
+            }
+
+            @media (min-width: $media-xl) {
+                font-size: $fontsize-s;
+            }
+        }
+
+        @media (min-width: $media-lg) {
+            font-size: $fontsize-xs;
+            line-height: 1.4;
+        }
+
+        @media (min-width: $media-xl) {
+            font-size: $fontsize-s;
         }
     }
 
     .publish-date {
         @include font-style($helvetica-light, $fontsize-s, $color-secundary);
+
+        @media (min-width: $media-lg) {
+            font-size: $fontsize-xs;
+        }
+
+        @media (min-width: $media-xl) {
+            font-size: $fontsize-s;
+        }
+
     }
 
     .btn-custom-search {
         @include btn-main($color-primary, $color-light, $fontsize-s, $helvetica-medium);
         border: 1px solid $color-tertiary;
+
+        @media (min-width: $media-lg) {
+            font-size: $fontsize-xs;
+        }
+
+        @media (min-width: $media-xl) {
+            font-size: $fontsize-s;
+        }
 
         &:hover {
             background-color: darken($color-primary, 10%);
