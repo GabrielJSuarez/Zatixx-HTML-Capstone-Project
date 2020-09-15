@@ -78,6 +78,10 @@ html {
 .carousel-btn-dark {
   font-size: $fontsize-m;
   color: $color-dark;
+
+  @media (min-width: $media-md) {
+    font-size: $fontsize-s;
+  }
 }
 
 .btn-prev-product {
@@ -85,6 +89,11 @@ html {
   top: 623px;
   opacity: 0.8;
   width: 4.5rem;
+
+  @media (min-width: $media-md) {
+    left: -33px;
+    top: 0px;
+  }
 }
 
 .btn-next-product {
@@ -92,6 +101,11 @@ html {
   top: 623px;
   opacity: 0.8;
   width: 4.5rem;
+
+  @media (min-width: $media-md) {
+    right: -33px;
+    top: 0px;
+  }
 }
 
 

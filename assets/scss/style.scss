@@ -219,24 +219,41 @@
 
 // Products Section
 
-.product-container {}
+.product-container {
+  width: 100%;
+
+  @media (min-width: $media-md) {
+    width: 95%
+  }
+}
 
 .product-title {
-
   h2 {
     @include font-style($helvetica-bold, $fontsize-xs, $color-tertiary);
     display: flex;
     align-items: center;
     ;
 
+    @media (min-width: $media-md) {
+      font-size: $fontsize-s;
+    }
+
     i {
       font-size: $fontsize-m;
       color: $color-secundary;
       opacity: 0.7;
+
+      @media (min-width: $media-md) {
+        font-size: $fontsize-l;
+      }
     }
 
     span {
       @include font-style($helvetica-medium, $fontsize-xxs, $color-secundary);
+
+      @media (min-width: $media-md) {
+        font-size: $fontsize-xs;
+      }
     }
   }
 
@@ -256,11 +273,19 @@
     @include font-style($helvetica-bold, $fontsize-xs, darken($color-secundary, 10%));
     overflow-y: hidden;
     height: 3rem;
+
+    @media (min-width: $media-md) {
+      font-size: $fontsize-xxs;
+      height: 4rem;
+    }
   }
 
   p {
     @include font-style($helvetica-bold, $fontsize-xs, $color-primary);
 
+    @media (min-width: $media-md) {
+      font-size: $fontsize-xxs;
+    }
 
   }
 
