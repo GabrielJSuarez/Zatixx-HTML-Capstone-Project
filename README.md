@@ -7,7 +7,9 @@
 > Webpage built from scratch following the guide lines of the client (Microverse) using HTML/CSS/Bootstrap 4/SASS (Scss sintax)
 
 
-![Alt text](https://github.com/GabrielJSuarez/Using-Boostrap/blob/newsweek-Clone-Feature-Branch/assetts/images/screenshot.png?raw=true "Screenshot")
+![Alt text](https://github.com/GabrielJSuarez/Zatixx-HTML-Capstone-Project/blob/Feature-Branch/assets/images/index-screenshot.png?raw=true "Screenshot")
+
+![Alt text](https://github.com/GabrielJSuarez/Zatixx-HTML-Capstone-Project/blob/Feature-Branch/assets/images/search-screenshot.png?raw=true "Screenshot")
 
 ## Built With
 
@@ -33,6 +35,12 @@ The project is public.
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
 
 ## Show your support
 
