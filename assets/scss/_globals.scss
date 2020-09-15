@@ -1,12 +1,10 @@
-/* stylelint-disable */
-
 // Globals
 
 html {
   font-size: 62.5%; //REM Reset
 }
 
-// Buttons 
+// Buttons
 // Search Buttom
 
 .search-buttom {
@@ -15,18 +13,19 @@ html {
   justify-content: center;
   height: 4rem;
   background-color: $color-tertiary;
+
   @include font-style($gotham-rounded, $fontsize-s, $color-secundary);
 
   @media (min-width: $media-lg) {
     height: 5rem;
   }
-
 }
 
 // Carousel buttons
 
 .btn-custom {
   @include btn-main($color-primary, $color-light, $fontsize-xs, $helvetica-medium);
+
   border: 1px solid $color-tertiary;
 
   &:hover {
@@ -112,7 +111,7 @@ html {
 
   @media (min-width: $media-md) {
     left: -33px;
-    top: 0px;
+    top: 0;
   }
 
   @media (min-width: $media-lg) {
@@ -162,7 +161,7 @@ html {
   }
 }
 
-// Footer buttoms 
+// Footer buttoms
 
 .lenguage-btn {
   div {
@@ -176,6 +175,7 @@ html {
 
   button {
     @include font-style($helvetica-medium, $fontsize-xxs, $color-secundary);
+
     border-color: $color-secundary;
     width: 10rem;
 
