@@ -39,6 +39,10 @@
       @media (min-width: $media-md) {
         font-size: $fontsize-xl;
       }
+
+      @media (min-width: $media-xl) {
+        font-size: 6rem;
+      }
     }
 
     .navbar-brand {
@@ -47,6 +51,10 @@
 
       @media (min-width: $media-md) {
         font-size: $fontsize-m;
+      }
+
+      @media (min-width: $media-xl) {
+        font-size: $fontsize-l;
       }
     }
 
@@ -59,6 +67,10 @@
 
       @media (min-width: $media-md) {
         font-size: $fontsize-xs;
+      }
+
+      @media (min-width: $media-xl) {
+        font-size: $fontsize-s;
       }
 
     }
@@ -326,14 +338,26 @@ footer {
     i {
       font-size: $fontsize-xl;
       color: $color-secundary;
+
+      @media (min-width: $media-md) {
+        font-size: 6rem;
+      }
     }
 
     h3 {
       @include font-style($helvetica-medium, $fontsize-s, $color-secundary);
+
+      @media (min-width: $media-md) {
+        font-size: $fontsize-m;
+      }
     }
 
     p {
       @include font-style($helvetica-medium, $fontsize-xxs, $color-secundary);
+
+      @media (min-width: $media-md) {
+        font-size: $fontsize-s;
+      }
     }
   }
 
@@ -343,12 +367,24 @@ footer {
 
       h3 {
         @include font-style($helvetica-medium, $fontsize-xs, $color-primary);
+
+        @media (min-width: $media-md) {
+          font-size: $fontsize-s;
+        }
       }
     }
 
     nav {
       a {
         @include font-style($helvetica-medium, $fontsize-xs, $color-secundary);
+
+        @media (min-width: $media-md) {
+          font-size: $fontsize-s;
+        }
+
+        @media (min-width: $media-lg) {
+          font-size: $fontsize-xs;
+        }
 
         i {
           font-size: $fontsize-s;
@@ -367,6 +403,14 @@ footer {
   .footer-copyright {
     p {
       @include font-style($helvetica-medium, $fontsize-xxs, $color-secundary);
+
+      @media (min-width: $media-md) {
+        font-size: $fontsize-xs;
+      }
+
+      @media (min-width: $media-lg) {
+        font-size: $fontsize-s;
+      }
     }
   }
 }
