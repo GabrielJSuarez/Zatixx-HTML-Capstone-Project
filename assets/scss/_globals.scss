@@ -76,19 +76,19 @@ html {
 }
 
 .carousel-btn-dark {
-  font-size: $fontsize-l;
+  font-size: $fontsize-m;
   color: $color-dark;
 }
 
 .btn-prev-product {
-  left: -25px;
+  left: -15px;
   top: 623px;
   opacity: 0.8;
   width: 4.5rem;
 }
 
 .btn-next-product {
-  right: -25px;
+  right: -15px;
   top: 623px;
   opacity: 0.8;
   width: 4.5rem;
@@ -118,13 +118,13 @@ html {
   }
 
   h3 {
-    @include font-style($helvetica-bold, $fontsize-s, $color-primary);
+    @include font-style($helvetica-bold, $fontsize-xs, $color-primary);
   }
 
   button {
-    @include font-style($helvetica-medium, $fontsize-xs, $color-secundary);
+    @include font-style($helvetica-medium, $fontsize-xxs, $color-secundary);
     border-color: $color-secundary;
-    width: 12rem;
+    width: 10rem;
 
     &:hover {
       color: $color-primary;
