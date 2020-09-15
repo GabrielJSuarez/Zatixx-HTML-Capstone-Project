@@ -41,7 +41,7 @@
       }
 
       @media (min-width: $media-xl) {
-        font-size: 6rem;
+        font-size: $fontsize-xxl;
       }
     }
 
@@ -81,15 +81,15 @@
 
 .hero-container {
   background-color: $color-primary;
-  height: 40rem;
+  height: $height40;
   z-index: -1;
 
   @media (min-width: $media-md) {
-    height: 35rem;
+    height: $height35;
   }
 
   @media (min-width: $media-lg) {
-    height: 40rem;
+    height: $height40;
   }
 
   &::before {
@@ -165,7 +165,11 @@
   .form-content {
     height: 4rem;
     border-radius: 0;
-    @include font-style($gotham-rounded, $fontsize-s, $color-secundary);
+    @include font-style($gotham-rounded, $fontsize-xs, $color-secundary);
+
+    @media (min-width: $media-lg) {
+      font-size: $fontsize-s;
+    }
 
     @media (min-width: $media-lg) {
       height: 5rem;
@@ -336,7 +340,7 @@ footer {
       color: $color-secundary;
 
       @media (min-width: $media-md) {
-        font-size: 6rem;
+        font-size: $fontsize-xxl;
       }
     }
 
