@@ -42,6 +42,7 @@ Contributions, issues and feature requests are welcome!
 - Gotham & Helvetica Typography were used in this project
 - Bootstrap 4 Framework was used in it's entirety for this project
 - Live Sass Compiler VS Code Extention Was used to compile SCSS code into Plain CSS with the support of Node JS
+- [Unsplash](https://unsplash.com/) Stock Photo Site was used for all the product images
 
 ## Show your support
 
