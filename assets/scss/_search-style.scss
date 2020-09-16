@@ -67,7 +67,11 @@
     }
 
     h3 {
-      @include font-style($gotham-rounded, $fontsize-xs, $color-light);
+      @include font-style($gotham-rounded, $fontsize-xxs, $color-light);
+
+      @media (min-width: $media-sm) {
+        font-size: $fontsize-xs;
+      }
 
       @media (min-width: $media-lg) {
         font-size: $fontsize-s;
