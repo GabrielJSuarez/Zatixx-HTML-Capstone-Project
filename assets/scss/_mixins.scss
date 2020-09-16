@@ -1,0 +1,25 @@
+/* stylelint-disable */
+
+// Mixins
+
+//----------
+
+// Fonts
+@mixin spacing($space) {
+  letter-spacing: $space;
+}
+
+@mixin font-style($fontfamily, $fontsize, $fontcolor) {
+  font-family: $fontfamily;
+  font-size: $fontsize;
+  color: $fontcolor;
+}
+
+// Buttons
+
+@mixin btn-main($bg-color, $font-color, $font-size, $font-family) {
+  background-color: $bg-color;
+  font-family: $font-family;
+  font-size: $font-size;
+  color: $font-color;
+}

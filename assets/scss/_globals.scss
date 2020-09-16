@@ -1,0 +1,189 @@
+/* stylelint-disable */
+
+// Globals
+
+html {
+  font-size: 62.5%; //REM Reset
+}
+
+// Buttons
+// Search Buttom
+
+.search-buttom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 4rem;
+  background-color: $color-tertiary;
+
+  @include font-style($gotham-rounded, $fontsize-s, $color-secundary);
+
+  @media (min-width: $media-lg) {
+    height: 5rem;
+  }
+}
+
+// Carousel buttons
+
+.btn-custom {
+  @include btn-main($color-primary, $color-light, $fontsize-xs, $helvetica-medium);
+
+  border: 1px solid $color-tertiary;
+
+  &:hover {
+    background-color: darken($color-primary, 10%);
+  }
+
+  @media (min-width: $media-lg) {
+    font-size: $fontsize-s;
+  }
+
+  @media (min-width: $media-xl) {
+    font-size: $fontsize-m;
+  }
+}
+
+.btn-prev {
+  left: -45px;
+  opacity: 0.8;
+
+  @media (min-width: $media-md) {
+    left: -88px;
+  }
+
+  @media (min-width: $media-lg) {
+    left: -116px;
+  }
+
+  @media (min-width: $media-xl) {
+    left: -163px;
+  }
+}
+
+.btn-next {
+  right: -45px;
+  opacity: 0.8;
+
+  @media (min-width: $media-md) {
+    right: -87px;
+  }
+
+  @media (min-width: $media-lg) {
+    right: -116px;
+  }
+
+  @media (min-width: $media-xl) {
+    right: -163px;
+  }
+}
+
+.carousel-btn {
+  background-color: darken($color-primary, 5%);
+  border-radius: 50px;
+  color: $color-light;
+  font-size: $fontsize-m;
+
+  @media (min-width: $media-md) {
+    font-size: $fontsize-l;
+  }
+
+  @media (min-width: $media-lg) {
+    font-size: $fontsize-xl;
+  }
+
+  @media (min-width: $media-xl) {
+    font-size: 5rem;
+  }
+}
+
+.carousel-btn-dark {
+  font-size: $fontsize-m;
+  color: $color-dark;
+
+  @media (min-width: $media-md) {
+    font-size: $fontsize-s;
+  }
+}
+
+.btn-prev-product {
+  left: -15px;
+  top: 623px;
+  opacity: 0.8;
+  width: 4.5rem;
+
+  @media (min-width: $media-md) {
+    left: -33px;
+    top: 0;
+  }
+
+  @media (min-width: $media-lg) {
+    left: -40px;
+    top: 0;
+  }
+
+  @media (min-width: $media-xl) {
+    left: -45px;
+    top: 0;
+  }
+}
+
+.btn-next-product {
+  right: -15px;
+  top: 623px;
+  opacity: 0.8;
+  width: 4.5rem;
+
+  @media (min-width: $media-md) {
+    right: -33px;
+    top: 0;
+  }
+
+  @media (min-width: $media-lg) {
+    right: -40px;
+    top: 0;
+  }
+
+  @media (min-width: $media-xl) {
+    right: -45px;
+    top: 0;
+  }
+}
+
+// Product buttoms
+
+.btn-info {
+  color: $color-secundary;
+  background-color: $color-light;
+  border-color: $color-secundary;
+  border-radius: 0;
+
+  &:hover,
+  &:focus {
+    background-color: $color-primary;
+  }
+}
+
+// Footer buttoms
+
+.lenguage-btn {
+  div {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  h3 {
+    @include font-style($helvetica-bold, $fontsize-xs, $color-primary);
+  }
+
+  button {
+    @include font-style($helvetica-medium, $fontsize-xxs, $color-secundary);
+
+    border-color: $color-secundary;
+    width: 10rem;
+
+    &:hover {
+      color: $color-primary;
+      border-color: $color-primary;
+    }
+  }
+}

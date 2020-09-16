@@ -1,0 +1,286 @@
+/* stylelint-disable */
+
+// Search Hero
+
+.hero-container-search {
+  background-color: $color-primary;
+  height: $height40;
+  z-index: -1;
+
+  @media (min-width: $media-md) {
+    height: 17rem;
+  }
+
+  @media (min-width: $media-lg) {
+    height: 23rem;
+  }
+
+  &::before {
+    height: 0;
+    position: absolute;
+    top: -57px;
+    content: "\f11b";
+    font-family: 'FontAwesome';
+    font-size: 23rem;
+    color: rgba(56, 56, 56, 0.2);
+    z-index: 0;
+
+    @media (min-width: $media-md) {
+      top: 59px;
+      left: -95px;
+      font-size: 15.5rem;
+      transform: rotate(-45deg);
+    }
+
+    @media (min-width: $media-lg) {
+      top: 65px;
+      left: -127px;
+      font-size: 21rem;
+
+    }
+
+    @media (min-width: $media-xl) {
+
+      font-size: 22rem;
+    }
+
+
+  }
+
+  .page-title {
+    z-index: $zindex1;
+
+    h1 {
+      @include font-style($gotham-bold, $fontsize-xl, $color-light);
+
+      span {
+        @include spacing(-8px);
+      }
+
+      @media (min-width: $media-md) {
+        font-size: $fontsize-xl;
+      }
+
+      @media (min-width: $media-lg) {
+        font-size: $fontsize-xxl;
+      }
+    }
+
+    h3 {
+      @include font-style($gotham-rounded, $fontsize-xxs, $color-light);
+
+      @media (min-width: $media-sm) {
+        font-size: $fontsize-xs;
+      }
+
+      @media (min-width: $media-lg) {
+        font-size: $fontsize-s;
+      }
+    }
+  }
+
+  .hero-search {
+    z-index: 1;
+    width: $w-70;
+
+    @media (min-width: $media-md) {
+      width: 90%;
+    }
+
+    @media (min-width: $media-lg) {
+      width: 80%;
+    }
+  }
+
+  .form-content {
+    height: 4rem;
+    border-radius: 0;
+
+    @include font-style($gotham-rounded, $fontsize-xs, $color-secundary);
+
+    @media (min-width: $media-md) {
+      height: 3rem;
+    }
+
+    @media (min-width: $media-lg) {
+      height: 5rem;
+      font-size: $fontsize-s;
+    }
+  }
+}
+
+.search-buttom-search {
+  @extend .search-buttom;
+
+  @media (min-width: $media-md) {
+    height: 3rem;
+    font-size: $fontsize-xs;
+  }
+
+  @media (min-width: $media-lg) {
+    height: 5rem;
+    font-size: $fontsize-xs;
+  }
+}
+
+// Form bar
+
+.form-container {
+  height: 0;
+
+  @media (min-width: $media-md) {
+    height: 515px;
+  }
+
+  @media (min-width: $media-xl) {
+    height: 575px;
+  }
+
+  .form-bar {
+    div {
+      @include font-style($helvetica-medium, $fontsize-xxs, $color-secundary);
+
+      @media (min-width: $media-lg) {
+        font-size: $fontsize-xs;
+      }
+
+      @media (min-width: $media-xl) {
+        font-size: $fontsize-s;
+      }
+
+      .form-title {
+        @include font-style($helvetica-medium, $fontsize-xs, $color-tertiary);
+
+        @media (min-width: $media-lg) {
+          font-size: $fontsize-s;
+        }
+
+        @media (min-width: $media-xl) {
+          font-size: $fontsize-m;
+        }
+      }
+    }
+  }
+}
+
+// Search Ads
+
+.ad-hover {
+  &:hover {
+    background-color: $color-light;
+  }
+}
+
+.search-result {
+  h2 {
+    @include font-style($helvetica-medium, $fontsize-xs, $color-secundary);
+
+    span {
+      color: $color-tertiary;
+    }
+
+    @media (min-width: $media-lg) {
+      font-size: $fontsize-s;
+    }
+  }
+}
+
+.ad-cont {
+  .adds-head {
+    @include font-style($helvetica-medium, $fontsize-s, $color-tertiary);
+
+    @media (min-width: $media-xl) {
+      font-size: $fontsize-m;
+    }
+  }
+
+  .ad-condition {
+    @include font-style($helvetica-medium, $fontsize-xs, $color-primary);
+
+    text-transform: uppercase;
+
+    @media (min-width: $media-xl) {
+      font-size: $fontsize-s;
+    }
+  }
+
+  .ad-bod {
+    @include font-style($helvetica-light, $fontsize-s, $color-secundary);
+
+    line-height: 1.2;
+
+    @media (min-width: $media-md) {
+      font-size: $fontsize-xs;
+      line-height: 1.4;
+    }
+
+    @media (min-width: $media-xl) {
+      font-size: $fontsize-s;
+    }
+
+    span {
+      @include font-style($helvetica-medium, $fontsize-s, $color-tertiary);
+
+      @media (min-width: $media-md) {
+        font-size: $fontsize-xs;
+      }
+
+      @media (min-width: $media-xl) {
+        font-size: $fontsize-s;
+      }
+    }
+  }
+
+  .publish-date {
+    @include font-style($helvetica-light, $fontsize-s, $color-secundary);
+
+    @media (min-width: $media-lg) {
+      font-size: $fontsize-xs;
+    }
+
+    @media (min-width: $media-xl) {
+      font-size: $fontsize-s;
+    }
+  }
+
+  .btn-custom-search {
+    @include btn-main($color-primary, $color-light, $fontsize-xs, $helvetica-medium);
+
+    border: 1px solid $color-tertiary;
+
+    @media (min-width: $media-lg) {
+      font-size: $fontsize-xs;
+    }
+
+    @media (min-width: $media-xl) {
+      font-size: $fontsize-s;
+    }
+
+    &:hover {
+      background-color: darken($color-primary, 10%);
+    }
+  }
+}
+
+// Pagination
+
+.page-link {
+  @include font-style($helvetica-medium, $fontsize-s, $color-tertiary);
+
+  &:hover {
+    background-color: $color-primary;
+    color: $color-light;
+  }
+}
+
+// Footer
+
+footer {
+  .footer-info {
+    .footer-text {
+      @include font-style($helvetica-medium, $fontsize-xs, $color-secundary);
+
+      line-height: 2;
+    }
+  }
+}
