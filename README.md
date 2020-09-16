@@ -7,9 +7,9 @@
 > Webpage built from scratch following the guide lines of the client (Microverse) using HTML/CSS/Bootstrap 4/SASS (Scss sintax)
 
 
-![Alt text](https://github.com/GabrielJSuarez/Zatixx-HTML-Capstone-Project/blob/Feature-Branch/assets/images/index-screenshot.png?raw=true "Screenshot")
+![Alt text](https://github.com/GabrielJSuarez/Zatixx-HTML-Capstone-Project/blob/master/assets/images/index-screenshot.png?raw=true "Screenshot")
 
-![Alt text](https://github.com/GabrielJSuarez/Zatixx-HTML-Capstone-Project/blob/Feature-Branch/assets/images/search-screenshot.png?raw=true "Screenshot")
+![Alt text](https://github.com/GabrielJSuarez/Zatixx-HTML-Capstone-Project/blob/master/assets/images/search-screenshot.png?raw=true "Screenshot")
 
 ## Built With
 
