@@ -66,14 +66,24 @@
     }
 
     a {
-      @include font-style($gotham-rounded, $fontsize-xxs, $color-secundary);
+      @include font-style($gotham-rounded, 0.9rem, $color-secundary);
 
       &:hover {
         color: $color-primary;
       }
 
-      @media (max-width: $media-sm) {
-        font-size: 0.8rem;
+      @media (min-width: $media-sm) {
+        font-size: $fontsize-xxs;
+        margin-right: 0;
+      }
+
+      @media (min-width: $media-md) {
+        font-size: $fontsize-xs;
+        margin-right: 0;
+      }
+
+      @media (min-width: $media-lg) {
+        font-size: 1.2rem;
         margin-right: 0;
       }
 

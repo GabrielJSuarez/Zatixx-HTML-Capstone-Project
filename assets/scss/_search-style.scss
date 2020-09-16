@@ -35,9 +35,17 @@
     }
 
     @media (min-width: $media-lg) {
-      left: -150px;
-      font-size: 20rem;
+      top: 40px;
+      left: -100px;
+      font-size: 23.5rem;
     }
+
+    @media (min-width: $media-xl) {
+      left: -131px;
+      font-size: 23.5rem;
+    }
+
+
   }
 
   .page-title {
