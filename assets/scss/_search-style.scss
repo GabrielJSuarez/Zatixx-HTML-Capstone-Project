@@ -18,31 +18,30 @@
   &::before {
     height: 0;
     position: absolute;
-    top: 40px;
-    left: -216px;
+    top: -57px;
     content: "\f11b";
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
     font-family: 'FontAwesome';
-    font-size: 37rem;
+    font-size: 23rem;
     color: rgba(56, 56, 56, 0.2);
     z-index: 0;
 
     @media (min-width: $media-md) {
-      top: 50px;
-      left: -110px;
-      font-size: 16.5rem;
+      top: 59px;
+      left: -95px;
+      font-size: 15.5rem;
+      transform: rotate(-45deg);
     }
 
     @media (min-width: $media-lg) {
-      top: 40px;
-      left: -100px;
-      font-size: 23.5rem;
+      top: 65px;
+      left: -127px;
+      font-size: 21rem;
+
     }
 
     @media (min-width: $media-xl) {
-      left: -131px;
-      font-size: 23.5rem;
+
+      font-size: 22rem;
     }
 
 

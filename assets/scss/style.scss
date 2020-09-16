@@ -120,24 +120,25 @@
   &::before {
     height: 0;
     position: absolute;
-    top: 40px;
-    left: -216px;
+    top: -57px;
     content: "\f11b";
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
     font-family: 'FontAwesome';
-    font-size: 37rem;
-    -webkit-transform: rotate(-45deg);
+    font-size: 23rem;
     color: rgba(56, 56, 56, 0.2);
     z-index: 0;
 
+
     @media (min-width: $media-md) {
-      top: 45px;
-      font-size: 34rem;
+      top: 65px;
+      left: -190px;
+      font-size: 31rem;
+      transform: rotate(-45deg);
     }
 
     @media (min-width: $media-lg) {
-      font-size: 39rem;
+      top: 75px;
+      left: -213px;
+      font-size: 35rem;
     }
   }
 
@@ -163,7 +164,7 @@
     }
 
     h3 {
-      @include font-style($gotham-rounded, $fontsize-xs, $color-light);
+      @include font-style($gotham-rounded, $fontsize-xsl, $color-light);
 
       @media (min-width: $media-md) {
         font-size: $fontsize-s;
